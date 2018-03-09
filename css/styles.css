@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    line-height: 2em;
+}
+body{
+    font-family: futura, sans-serif;
+}
+body p{
+    color: white;
+}
+.head{
+    border-radius: 50%;
+    width: 400px;
+}
+nav ul li{
+    display: inline;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+}
+header{
+    padding: 30px;
+    background-color: #333841;
+}
+
+nav ul li a:before{
+    content: "";
+    width: 00px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+    top: 60px;
+    transition: all 0.5s ease;
+}
+nav ul li a:hover:before{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+    top: 60px
+}
+.firstline{
+    margin-top: 50px;
+}
+#personalia{
+    background-color: #43C3B1 ;
+    height: 100vh;
+    min-height: 700px;
+}
+
+.imgBox{
+    width: 50%;
+    float: left;
+    height: 100vh;
+    min-height: 700px;
+}
+.imgBox img{
+    margin-top: 50%;
+    transform: translateY(-50%);
+    margin-left: 100px;
+}
+.contentBox{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+}
+h1{
+    font-size: 2em;
+    color: white;
+    margin-top: 80px;
+    position: relative;
+}
+h1:before{
+    content:"";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    top: 50px;
+}
+#opleiding{
+     background-color: #2973A8 ;
+    height: 100vh;
+    min-height: 700px;
+}
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.otherline{
+    margin-top: 15px
+}
+a{
+    color:white;
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-top: px;
+}
+.arrows{
+    position: absolute;
+    right: 50px;
+    top: 50%
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+#werkervaring{
+    background-color: #C33249 ;
+    height: 100vh;
+    min-height: 700px;
+}
+#mijnwerk{
+    background-color: darkslateblue;
+    height: auto;
+    min-height: 100vh;
+}
+.back1{
+    background: url(../images/backimg1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.back2{
+    background: url(../images/backimg2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.back3{
+    background: url(../images/backimg3.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.back4{
+    background: url(../images/backimg4.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#vaardigheden{
+    background-color: #333841 ;
+    height: 100vh;
+    min-height: 700px;
+}
+.outer{
+    width: 300px;
+    height: 8px;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+.inner1{
+    width: 280px;
+    height: 8px;
+    background-color: white;
+}
+
+.inner2{
+    width: 240px;
+    height: 8px;
+    background-color: white;
+}
+.inner3{
+    width: 180px;
+    height: 8px;
+    background-color: white;
+}
+.inner4{
+    width: 270px;
+    height: 8px;
+    background-color: white;
+}
+.inner5{
+    width: 180px;
+    height: 8px;
+    background-color: white;
+}
+.inner6{
+    width: 220px;
+    height: 8px;
+    background-color: white;
+}
+.inner7{
+    width: 200px;
+    height: 8px;
+    background-color: white;
+}
+.inner8{
+    width: 250px;
+    height: 8px;
+    background-color: white;
+}
+figure{
+    margin-top: 50px
+}
+figure img{
+    width: 200px;
+    height: 150px;
+}
+h2{
+    margin-top: 40px;
+    color: white
+}
+@media only screen and (max-width: 1100px){
+    .contentBox{
+        float:none;
+    }
+    #personalia, #opleiding, #vaardigheden, #mijnwerk, #werkervaring{
+    height: auto;
+    min-height: 0px;
+    }
+    nav ul li{
+    display: block;
+    margin: 15px 0px;
+    }
+    nav ul li a{
+        transition: all 0.5s ease;
+    }
+    nav ul li a:hover{
+        letter-spacing: 0.2em;
+    }
+    nav ul li a:hover:before{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+    
+}
+    
+    .imgBox{
+        width: 100%;
+        height: auto;
+        min-height: 0px;
+    }
+    .imgBox img{
+        margin-top: 200px;
+        transform: translateY(-50%);
+        margin-left: 100px;
+        width: 200px;
+    }
+    .contentBox{
+        width: 90%;
+        height: auto;
+        min-height: 0px;
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        
+    }
+    h1{
+        margin-top: 0px;
+    }
+    h1:before{
+    content:"";
+    position: absolute;
+    width: 0px;
+    height: 0;
+    background-color: white;
+    top: 0;
+    }
+    i{
+        display: none;
+    }
+    .back1, .back2, .back3, .back4{
+        display: none;
+    }
+}
